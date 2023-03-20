@@ -51,8 +51,8 @@ img_t *alloc_img(int width, int height) {
 
     img->pix2d = malloc(sizeof(pixel_t*) * height);
     if (!img->pix2d) {
-        free(img);
         free(img->pix1d);
+        free(img);
         return NULL;
     }
 

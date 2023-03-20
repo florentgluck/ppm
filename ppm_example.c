@@ -28,7 +28,7 @@ void usage(char **argv) {
  * @param argv program's command line arguments
  */
 int main(int argc, char **argv) {
-    char *input, *output;
+    char *input = NULL, *output = NULL;
     enum PPM_TYPE type;
 
     // Parse command line
